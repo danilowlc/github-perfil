@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Perfil from './components/Perfil'
-import Formulario from './components/Formulario'
+// import Formulario from './components/Formulario'
 import RepoList from './components/RepoList'
 
 function App() {
@@ -44,9 +44,9 @@ function App() {
         <Formulario />
         )}
       <button onClick={() => serFormIsVisible(!formIsVisible)} type='button'>Toggle form</button> */}
-      <input type="text" onBlur={(e) => setNameUser(e.target.value)} />
+      <input className='container' type="text" onBlur={(e) => setNameUser(e.target.value)} />
 
-      {nameUser.length > 4 && (
+      {nameUser.length > 2 && (
         <>
           <Perfil nameUser={nameUser} />
           <RepoList nameUser={nameUser} />

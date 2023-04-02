@@ -43,7 +43,6 @@ const RepoList = ({ nameUser }) => {
                         ))}
                     </ul>
                 </div>
-
             )}
         </>
     )
